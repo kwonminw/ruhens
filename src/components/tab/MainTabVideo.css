@@ -1,0 +1,97 @@
+/* MainTabVideo.css */
+
+.MainTabVideo {
+    margin: 40px 0;
+    padding: 0 16px;
+}
+
+.MainTabVideo h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.MainTabVideo .tab-txt1 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.MainTabVideo .tab-txt2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 600;
+}
+
+.MainTabVideo .tab-btn {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.MainTabVideo .tab-btn button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background-color: #fff;
+    font-size: 16px;
+    color: #999;
+}
+
+.MainTabVideo .tab-btn .active button {
+    background-color: #1682ff;
+    border-color: #1682ff;
+    color: #fff;
+}
+
+.MainTabVideo .tab-video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .MainTabVideo {
+        display: flex;
+        gap: 120px;
+        padding: 0 32px;
+    }
+
+    .MainTabVideo .tab-txtbtn {
+        width: 420px;
+    }
+
+    .MainTabVideo h2 {
+        margin-bottom: 32px;
+        font-size: 30px;
+    }
+
+    .MainTabVideo .tab-txt1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .MainTabVideo .tab-txt2 {
+        font-size: 24px;
+    }
+
+    .MainTabVideo .tab-video {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .MainTabVideo {
+        width: 1664px;
+        margin: 120px auto;
+    }
+
+    .MainTabVideo .tab-txtbtn {
+        padding-top: 150px;
+    }
+
+    .MainTabVideo .tab-txt2 {
+        margin-bottom: 60px;
+    }
+}

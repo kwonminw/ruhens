@@ -1,0 +1,23 @@
+/* App.css */
+
+#wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hide {
+  position: fixed;
+  top: -9999px;
+  left: -99999px;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+@media screen and (min-width:1280px) {
+  #wrapper {
+    min-width: 1664px;
+  }
+}

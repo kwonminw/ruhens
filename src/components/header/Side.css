@@ -1,0 +1,128 @@
+/* Side.css */
+
+/* 위->아래로 내려오면서 열림
+.Side {
+    position: fixed;
+    inset: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #ce8d8d;
+    z-index: 800;
+    transition: height 1s;
+}
+
+.Side.view {
+    height: 100%;
+}
+*/
+
+.Side {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 800;
+    transition: width 0.6s;
+}
+
+.Side.view {
+    width: 100%;
+}
+
+.side-inner {
+    width: 1280px;
+}
+
+.side-logo {
+    padding: 20px 16px;
+    border-bottom: 1px solid #aaa;
+}
+
+.side-logo img {
+    width: 120px;
+}
+
+.side-utills {
+    padding: 12px 16px;
+    border-bottom: 1px solid #aaa;
+}
+
+.side-utills ul {
+    display: flex;
+}
+
+.side-utills li::after {
+    content: "";
+    display: inline-block;
+    height: 11px;
+    border-left: 1px solid #888;
+    margin: 0 12px;
+    opacity: 0.5;
+}
+
+.side-utills li:last-child::after {
+    display: none;
+}
+
+.side-utills li a {
+    font-size: 15px;
+    color: #555;
+}
+
+.side-gnb li {
+    border-bottom: 1px solid #aaa;
+}
+
+.side-gnb li a {
+    display: block;
+    padding: 12px 16px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+
+.side-gnb li img {
+    width: 54px;
+}
+
+.btn-close-side {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+.btn-close-side button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+}
+
+.btn-close-side button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin-left: -14px;
+    margin-top: -2px;
+    background-color: #222;
+}
+
+.btn-close-side button .bar1 {
+    transform: rotate(45deg);
+}
+
+.btn-close-side button .bar2 {
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width:1280px) {
+    .Side {
+        display: none;
+    }
+}

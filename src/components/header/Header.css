@@ -1,0 +1,138 @@
+/* Header.css */
+
+#header {
+    position: relative;
+    z-index: 600;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+#header .logo {
+    width: 120px;
+    padding-left: 6px;
+}
+
+#header .logo a {
+    display: block;
+    height: 17px;
+    padding: 10px;
+}
+
+#header .btn-open-side {
+    padding-right: 16px;
+}
+
+#header .btn-open-side button {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background-color: transparent;
+}
+
+#header .btn-open-side button span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #222;
+    text-indent: -99999px;
+}
+
+#header .btn-open-side button span:last-child {
+    margin-bottom: 0;
+}
+
+#header .gnb,
+#header .utills {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    #header .logo {
+        padding-left: 22px;
+    }
+
+    #header .btn-open-side {
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    #header {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+    }
+
+    #header .inner {
+        width: 1664px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    #header .logo {
+        width: 163px;
+    }
+
+    #header .logo a {
+        height: 23px;
+    }
+
+    #header .btn-open-side {
+        display: none;
+    }
+
+    #header .gnb {
+        display: block;
+    }
+
+    #header .gnb ul {
+        display: flex;
+        gap: 36px;
+    }
+
+    #header .gnb img {
+        width: 52px;
+        margin-top: 2px;
+    }
+
+    #header .gnb li a {
+        color: #fff;
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    #header .utills {
+        display: block;
+        padding-right: 32px;
+    }
+
+    #header .utills ul {
+        display: flex;
+    }
+
+    #header .utills li::before {
+        content: "";
+        display: inline-block;
+        height: 11px;
+        border-left: 1px solid #fff;
+        margin: 0 12px;
+        opacity: 0.5;
+    }
+
+    #header .utills li:first-child:before {
+        display: none;
+    }
+
+    #header .utills li a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

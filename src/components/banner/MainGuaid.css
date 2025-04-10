@@ -1,0 +1,119 @@
+/* MainGuaid.css */
+
+.MainGuaid {
+    margin: 40px 0;
+    padding: 0 16px;
+}
+
+.guaid {
+    position: relative;
+    padding: 28px;
+    margin-bottom: 12px;
+}
+
+.guaid.gu1 {
+    background-color: #dfe6f4;
+}
+
+.guaid.gu2 {
+    background-color: #f4f1ee;
+}
+
+.guaid .content {
+    position: relative;
+    z-index: 1;
+}
+
+.guaid .title {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.guaid .ment {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #666;
+}
+
+.guaid .btn a {
+    display: block;
+    border: 1px solid #000;
+    border-radius: 21px;
+    text-align: center;
+    line-height: 40px;
+    color: #888;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+.guaid.gu1 .btn a {
+    border-color: #93a9d6;
+}
+
+.guaid.gu2 .btn a {
+    border-color: #c3c3c3;
+}
+
+.guaid .bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.guaid.gu1 .bg {
+    width: 220px;
+}
+
+.guaid.gu2 .bg {
+    width: 180px;
+}
+
+@media screen and (min-width:768px) {
+    .MainGuaid {
+        margin: 80px 0;
+        padding: 0 32px;
+    }
+
+    .guaid.gu1 {
+        margin-top: 120px;
+    }
+
+    .guaid.gu2 {
+        margin-top: 200px;
+    }
+
+    .guaid.gu1 .bg {
+        width: 420px;
+    }
+
+    .guaid.gu2 .bg {
+        width: 360px;
+    }
+
+    .guaid .ment br {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .MainGuaid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 1664px;
+        margin: 120px auto;
+        padding-top: 60px;
+    }
+
+    .guaid {
+        width: calc((100% - 24px) / 2);
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding: 60px 60px 80px 60px;
+    }
+
+    .guaid.gu1,
+    .guaid.gu2 {
+        margin-top: 0;
+    }
+}

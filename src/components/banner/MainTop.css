@@ -1,0 +1,86 @@
+/* MainTop.css */
+
+/* 모바일용 스타일 */
+.MainTop {
+    background-color: #1682ff;
+}
+
+.MainTop .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MainTop .content {
+    flex: 1;
+    padding: 0 16px;
+    max-width: 320px;
+}
+
+.MainTop .content .pc {
+    display: none
+}
+
+.MainTop .close {
+    width: 24px;
+    padding-right: 16px;
+}
+
+.MainTop .close button {
+    border: 0;
+    background-color: transparent;
+}
+
+.MainTop .close span {
+    display: none;
+}
+
+/* 테블릿용 스타일 */
+@media screen and (min-width:768px) {
+    .MainTop .content {
+        padding: 0 32px;
+    }
+
+    .MainTop .close {
+        width: 60px;
+        padding-right: 32px;
+    }
+
+    .MainTop .close img {
+        width: 28px;
+        margin-bottom: 4px;
+    }
+
+    .MainTop .close span {
+        display: block;
+        font-size: 13px;
+        line-height: 1.2;
+        color: #fff;
+        opacity: 0.7;
+    }
+}
+
+/* PC용 스타일 */
+@media screen and (min-width:1280px) {
+    .MainTop .inner {
+        width: 1664px;
+        /* 안전사이즈 1600px + 테블릿에서 만들었던 화면좌우 여백 32px+32px */
+        margin: 0 auto;
+    }
+
+    .MainTop .content {
+        max-width: 827px;
+    }
+
+    .MainTop .content .mo {
+        display: none;
+    }
+
+    .MainTop .content .pc {
+        display: block;
+    }
+
+    .MainTop .close button img {
+        margin-bottom: 12px;
+    }
+}

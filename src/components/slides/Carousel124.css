@@ -1,0 +1,39 @@
+/* Carousel124.css */
+
+.Carousel124 {
+    position: relative;
+}
+
+.Carousel124 .BtnPrev,
+.Carousel124 .BtnNext {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.Carousel124 .BtnPrev {
+    left: 16px;
+}
+
+.Carousel124 .BtnNext {
+    right: 16px;
+}
+
+.Carousel124 .BtnPrev button,
+.Carousel124 .BtnNext button {
+    width: 22px;
+    border: 0;
+    background-color: transparent;
+}
+
+.Carousel124 .BtnPrev button:disabled,
+.Carousel124 .BtnNext button:disabled {
+    opacity: 0;
+}
+
+@media screen and (min-width:1280px) {
+    .Carousel124 {
+        width: 1664px;
+        margin: 0 auto 120px auto;
+    }
+}

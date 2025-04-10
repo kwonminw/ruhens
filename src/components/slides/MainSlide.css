@@ -1,0 +1,121 @@
+/* MainSlide.css */
+
+.MainSlide {
+    margin-bottom: 40px;
+}
+
+.mainSlide-item {
+    position: relative;
+}
+
+.mainSlide-item .pc {
+    display: none;
+}
+
+.mainSlide-item .text {
+    position: absolute;
+    left: 32px;
+    bottom: 100px;
+}
+
+.mainSlide-item .text .tx1 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #ecff00;
+    font-weight: 700;
+}
+
+.mainSlide-item .text .tx2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 300;
+}
+
+.mainSlide-item .text .tx3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.MainSlide ul.slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    display: flex !important;
+    justify-content: center;
+    gap: 14px;
+}
+
+.MainSlide ul.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #fff;
+    text-indent: -99999px;
+}
+
+.MainSlide ul.slick-dots li.slick-active button {
+    width: 40px;
+    background-color: #1682ff;
+}
+
+@media screen and (min-width:768px) {
+    .mainSlide-item .mo {
+        height: calc(100vh - 60px);
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .mainSlide-item .mo {
+        display: none;
+    }
+
+    .mainSlide-item .pc {
+        display: block;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .mainSlide-item .text {
+        left: 50%;
+        margin-left: -700px;
+        top: 50%;
+        margin-top: -160px;
+        bottom: auto;
+        /* 모바일에서 적용한 bottom 100px 무효 */
+    }
+
+    .mainSlide-item .text .tx1 {
+        font-size: 24px;
+    }
+
+    .mainSlide-item .text .tx2 {
+        margin-bottom: 16px;
+        font-size: 64px;
+    }
+
+    .mainSlide-item .text .tx3 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .MainSlide ul.slick-dots {
+        bottom: 60px;
+        gap: 20px;
+    }
+
+    .MainSlide ul.slick-dots li button {
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+    }
+
+    .MainSlide ul.slick-dots li.slick-active button {
+        width: 80px;
+    }
+}
